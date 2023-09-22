@@ -21,6 +21,8 @@ To build `kbmod` The packages required to build the code are:
 Ensure that the NVIDIA's `nvcc` compiler is available on your system, for example:
 ```
 nvcc --version
+//额外需要link
+sudo ln -s /usr/local/cuda-12.2/bin/* /usr/bin
 ```
 It is possible that the compiler is installed but not discoverable. In that case add its location to `PATH`. For example, if using `bash`  do `export PATH=/path/to/cuda:$PATH`. The default location for CUDA Toolkit installation is usually `/usr/local/cuda-XY.Z**` where `XY.Z` represent the CUDA Toolkit version that was installed.    
 If using `bash` add the appropriate command to `~/.bashrc` in order to avoid having to set it repeatedly.
