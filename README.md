@@ -39,6 +39,7 @@ git clone --recursive https://github.com/dirac-institute/kbmod.git
 Build
 ```
 cd kbmod
+// 这里似乎有个bug   // print("WARNING: GPU is not enabled. Performing co-adds on the CPU. 需要注释掉 print被覆盖了
 pip install .
 ```
 
